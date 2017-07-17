@@ -24,8 +24,8 @@ import static r.r_kjapp.R.id.imageView;
 public class HostActivity extends AppCompatActivity implements View.OnTouchListener, View.OnClickListener{
 
     // 変数いろいろ宣言
-    private FrameLayout frameLayout01;
-    private ConstraintLayout constrainlayout;
+//    private FrameLayout frameLayout01;
+    private ConstraintLayout constraintlayout;
     private ImageView target;
     private Button trash;
     private int targetLocalX;
@@ -51,7 +51,7 @@ public class HostActivity extends AppCompatActivity implements View.OnTouchListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_host);
 
-        constrainlayout = (ConstraintLayout) findViewById(R.id.ConstrainLayout);
+        constraintlayout = (ConstraintLayout) findViewById(R.id.ConstraintLayout);
 
         target = (ImageView)findViewById(imageView);
         target.setOnTouchListener(this);
@@ -160,9 +160,9 @@ public class HostActivity extends AppCompatActivity implements View.OnTouchListe
     }
     @Override
     public void onClick(View v) {
-        int childCount = constrainlayout.getChildCount();
+        int childCount = constraintlayout.getChildCount();
         if(childCount == 1) {
-            constrainlayout.addView(target);
+            constraintlayout.addView(target);
         }
     }
 
