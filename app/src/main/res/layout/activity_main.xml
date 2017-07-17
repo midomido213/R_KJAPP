@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This source code was created by RioKosuga.-->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="r.r_kjapp.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <Button
+        android:id="@+id/host_button"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:text="ホストモード"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="188dp"
+        android:layout_height="0dp"
+        android:text="メモ投稿画面"
+        android:textIsSelectable="false"
+        android:textSize="30sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:onClick="setScreenBlue"
+        android:text="青"
+        app:layout_constraintBottom_toTopOf="@+id/host_button"
+        app:layout_constraintLeft_toRightOf="@+id/yellow"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/pink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="setScreenPink"
+        android:text="ピンク"
+        app:layout_constraintBaseline_toBaselineOf="@+id/blue"
+        app:layout_constraintLeft_toRightOf="@+id/blue"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:onClick="setScreenGreen"
+        android:text="緑"
+        app:layout_constraintLeft_toRightOf="@+id/pink"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pink" />
+
+    <Button
+        android:id="@+id/yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:onClick="setScreenYellow"
+        android:text="黄色"
+        app:layout_constraintBaseline_toBaselineOf="@+id/blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/yellow"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/send_button"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="66dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="送信"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/blue"
+        android:layout_marginStart="37dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/blue"
+        android:layout_marginLeft="37dp" />
+
+    <EditText
+        android:id="@+id/memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/send_button"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="115dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="113dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image1" />
+
+</android.support.constraint.ConstraintLayout>
