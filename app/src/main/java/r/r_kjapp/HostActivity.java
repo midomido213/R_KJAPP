@@ -34,17 +34,17 @@ public class HostActivity extends AppCompatActivity implements View.OnTouchListe
     private int screenY;
 
     // 画像拡大縮小の変数
-    private static final int STATE_NON = 0;         // 無操作
-    private static final int STATE_DRAGING = 2;     // 移動操作
-    private static final int STATE_ZOOMING = 4;     // 拡大縮小操作中
-    private static final int STATE_ROTATING = 5;    // 回転捜査中
+//    private static final int STATE_NON = 0;         // 無操作
+//    private static final int STATE_DRAGING = 2;     // 移動操作
+//    private static final int STATE_ZOOMING = 4;     // 拡大縮小操作中
+//    private static final int STATE_ROTATING = 5;    // 回転捜査中
+//
+//    private static final int STATE_WAITING = 1;     // ユーザーの操作待ち　シングルタッチ？ダブルタッチ？
+//    private static final int STATE_CHECKING = 3;    // ユーザーの操作待ち　拡大縮小？回転？
 
-    private static final int STATE_WAITING = 1;     // ユーザーの操作待ち　シングルタッチ？ダブルタッチ？
-    private static final int STATE_CHECKING = 3;    // ユーザーの操作待ち　拡大縮小？回転？
 
-
-    private static final int CHECK_TIMEOUT
-            = ViewConfiguration.getTapTimeout() + ViewConfiguration.getLongPressTimeout();
+//    private static final int CHECK_TIMEOUT
+//            = ViewConfiguration.getTapTimeout() + ViewConfiguration.getLongPressTimeout();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
